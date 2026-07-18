@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    --primary-color: #9136ce;
+    --background-color: #f3f3f3;
+    --post-border-color: #dadada;
+    --main-font: "Fredoka", sans-serif;
+    --title-font: "Lobster", sans-serif;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--background-color);
+}
+
+.post {
+    padding-left: 1rem;
+    border: 2px solid var(--post-border-color);
+    border-radius: 0.75rem;
+    margin: 3rem;
+    padding: 1rem;
+    width: 90%;
+
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.post-content {
+    padding: 0.25rem 1rem;
+}
+
+.post div {
+    margin: 0 0 2rem 0;
+}
+
+.post > p {
+    border-top: 2px solid var(--post-border-color);
+}
+
+header {
+    font-size: 5rem;
+    font-weight: 400;
+    font-family: var(--title-font);
+
+    background: linear-gradient(90deg,rgba(145, 54, 206, 1) 30%, rgba(90, 41, 196, 1) 100%);
+    height: 10rem;
+    padding: 1rem 4rem 1rem;
+
+    align-items: center;
+
+    margin-bottom: 2rem;
+
+    box-shadow: 0.25rem 0 1rem #010020;
+}
+
+header a, header a:hover {
+    color: var(--background-color);
+    text-decoration: none;
+}
+
+h1 a, h1 a:hover {
+    font-weight: 600;
+    font-size: 4rem;
+     color: var(--primary-color); 
+}
+
+
