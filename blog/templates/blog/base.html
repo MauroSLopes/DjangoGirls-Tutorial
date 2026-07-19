@@ -9,7 +9,10 @@
 </head>
 
 <body>
-    <header><a href="/">Django Girls+</a></header>
+    {% if user.is_authenticated %}
+    <header class="pageHeader"><a href="/">Django Girls </a><a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a></header>
+    {% endif %}
+    
     <main>
         {% block content %}
         {% endblock %}
